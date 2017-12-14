@@ -6,7 +6,7 @@ Fatal accidents take away more than 30,000 lives every year in the U.S. (NHTSA),
 **Authors**: Yuanfeng Hu, Aiting(Kelly) Kuang, Yuening Zhu
 
 
-## Data acquisition
+## Data Acquisition
 
 For our initial approach, we acquired data from [DATA.GOV](https://catalog.data.gov/dataset/allegheny-county-crash-data). Using this dataset as our initial step would help us determine which imporatnt factor to be used in your further analysis.
 
@@ -51,7 +51,7 @@ The directory ```results``` contains some intermediate data used across notebook
 
 There are several python test file that aim for testing function and ensure correctness of the work 
 
-```instructions.md``` is not relevant to users. It contains directions written for us by our GSI/professor. 
+```instructions.md``` is not relevant to users. It contains guideliness for this project
 
 ## Licensing
 

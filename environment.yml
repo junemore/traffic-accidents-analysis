@@ -10,6 +10,7 @@ dependencies:
   - statsmodels=0.8.0
   - dbfread=2.0.7
   - plotly
+  - basemap=1.0.7
   - pip:
     - watermark==1.5.0
     - sklearn

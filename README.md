@@ -6,7 +6,7 @@ Fatal accidents take away more than 30,000 lives every year in the U.S. (NHTSA),
 **Authors**: Yuanfeng Hu, Aiting(Kelly) Kuang, Yuening Zhu
 
 
-## Data acquisition
+## Data Acquisition
 
 For our initial approach, we acquired data from [DATA.GOV](https://catalog.data.gov/dataset/allegheny-county-crash-data). Using this dataset as our initial step would help us determine which imporatnt factor to be used in your further analysis.
 
@@ -20,18 +20,38 @@ The data we mainly focus on for our analysis would come from from [NHTSA (Nation
 The only software installation needed to run this repo is [Anaconda]("https://conda.io/docs/user-guide/install/index.html#regular-installation"). Follow the instruction on this website to have Anaconda installed. Once it has benn installed, you are all set to got to the next step.
 
 ## Before Everything
-Download the repo using "git clone "command from our our repo onto your local machine and open your command terminal. We have created a convenient Makefile that would perform some necessary procedure and an enviroment file to set up the correct enviroment in Anacoda
+Download the repo using "git clone "command from our our repo onto your local machine and open your command terminal. We have created the convenient ```Makefile``` that would perform some necessary procedure and an enviroment file(```environment.yml```) to set up the correct enviroment in Anacoda
 
 Type in the following commands in exact order to run the analysis: 
 
-make clean
+```
 make env
-source activate transportation
-make all
+source activate ct_env
+make test
+make run
+```
 
 ## Let's Take a Look
 
-After all the notebooks have run, you should see new converted files in the results, fig, and data directories. The data directories contain all the data we acquired online. The fig directoris contains all important graphs and plots we generated that we would put in our final report. The results director contains all intermediate data file that we created in our analysis. 
+After all the notebooks have run, you should see new converted files in the results, fig, and data directories. 
+
+The ```data``` directory contain all the data we acquired. 
+
+The ```fig``` directory contains all important graphs and plots we generated that we might put in our final report. 
+
+The ```results``` directory contains all intermediate data file that we created in our analysis. 
+
+The notebook ```main.ipynb``` contains a summary and thorough analysis of our work. 
+
+The notebook ```narrative_quality_support.ipynb``` contain brief analysis and explaination of the code in our note book. 
+
+The ```Notebook_1``` to ```Notebook_5``` contains our main analysis. Each notebook focus on differnt aspects of our analysis. Each of the ```Notebook_1``` to ```Notebook_5``` might save intermediate data to ```results`` directory, which would be used by the following notebook.
+
+The directory ```results``` contains some intermediate data used across notebooks. 
+
+There are several python test file that aim for testing function and ensure correctness of the work 
+
+```instructions.md``` is not relevant to users. It contains guideliness for this project
 
 ## Licensing
 

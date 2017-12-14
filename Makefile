@@ -19,6 +19,6 @@ clean :
 all : 
 	@echo did you remember to remove the saved file before run this command again? 
 	@echo Running the notebooks now! Be patient, this might take a while! 
-	jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute Notebook_*.ipynb
+	jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute Notebook*.ipynb
 	jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute main.ipynb
-	jupyter nbconvert --ExecutePreprocessor.timeout=600 --to notebook --execute narrative_quality_support.ipynb
+

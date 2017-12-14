@@ -10,7 +10,7 @@ Roadway traffic safety is a major concern for transportation governing agencies 
 
 We acquired data from [DATA.GOV](https://catalog.data.gov/dataset/allegheny-county-crash-data). Using this dataset as our initial step would help us determine which important factor to be used in your further analysis.
 
-The data we mainly focus on for our analysis would come from [NHTSA (National Highway Traffic Safety Administration)]( https://www-fars.nhtsa.dot.gov/Main/index.aspx) and [U.S. Department of transportation](https://www.rita.dot.gov/bts/data_and_statistics/index.html.)
+The data we mainly focus on for our analysis would come from [NHTSA (National Highway Traffic Safety Administration)]( ftp://ftp.nhtsa.dot.gov/FARS/) and [U.S. Department of transportation](https://www.rita.dot.gov/bts/data_and_statistics/index.html.)
 
 ["Fatality Analysis Reporting System (FARS) Analytical User’s Manual 1975-2016"](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812447) has been a great reference of code meaning in our analysis; you might want to download it just for reference,
 

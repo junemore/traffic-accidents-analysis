@@ -14,7 +14,7 @@ The data we mainly focus on for our analysis would come from NHTSA (National Hig
 
 ["Fatality Analysis Reporting System (FARS) Analytical User’s Manual 1975-2016"](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812447) has been a great reference of code meaning in our analysis; you might want to download it just for reference,
 
-Note : the combine "Preson" is verg large so it takes a long time to load, so we store information we need as person.h5 in results. We will load this dataframe directly to save time.
+Note : the combined "Preson" file is verg large so it takes a long time to load, so we store information we need as person.h5 in results. We will load this dataframe directly to save time. You can still access original "person" data in the "data" folder.
 
 ## Required Installation
 The only software installation needed to run this repo is [Anaconda]("https://conda.io/docs/user-guide/install/index.html#regular-installation"). Follow the instruction on this website to have Anaconda installed. Once it has been installed, you are all set to got to the next step.

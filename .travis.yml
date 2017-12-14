@@ -1,16 +1,24 @@
 
+
 language: python
+
 python:
   - "3.6"
-services:
-  - mysql
-before_install:
-  - mysql -u root -e "create database p3"
-  - mysql -u root p3 < test/travis.sql
+  
 install:
-  - pip install pytest
-  - pip install mysqlclient
-  - pip install seaborn
-  - pip install pandas
+  - sudo apt-get update
+  - wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  # Useful for debugging any issues with conda
+  - conda info -a
+
+  # List your dependencies here to create the necessary environment
+  - conda env create -f environment.yml
+  - source activate transportation
+  
 script:
-  - pytest test/tests.py
+  - python test/tests.py
